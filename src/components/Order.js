@@ -36,11 +36,10 @@ const childVariants = {
 const Order = ({ pizza, setShowModal }) => {
 
 
+ // useEffect lifecycle hook, array with only setShowModal as dep 
   useEffect(() => {
-    setTimeout(() => {
-      setShowModal(true)
-    }, 10000)
-  }, [setShowModal])
+    setTimeout(() => setShowModal(true), 5000);
+  }, [setShowModal]);
   
 
   return (
